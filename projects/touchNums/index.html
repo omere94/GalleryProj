@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Touch the Numbers</title>
+  </head>
+  <body onload="init()">
+    <h1>Touch the Numbers</h1>
+    <div>
+        <div class="message"></div>
+        <div class="timer"></div>
+        <div class="buttons">
+          <div class="next-num">Next Number: </div>
+            <button class="btn" onclick="chooseBoard(16)">Easy(4x4)</button>
+            <button class="btn" onclick="chooseBoard(25)">Hard(5x5)</button>
+            <button class="btn" onclick="chooseBoard(36)">Extreme!(6x6)</button>
+        </div>
+      <table class="board">
+      </table>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

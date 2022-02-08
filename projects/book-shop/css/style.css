@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(245, 208, 164);
+    font-size: 2em;
+    font-style: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+.books-container {
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+table {
+    background-color: rgb(230, 186, 132);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    -12px 19px 31px 13px rgb(51, 51, 51,0);
+    border: 3px solid rgb(51, 51, 51);
+    height: 20vh;
+    width: 90vh;
+    border: 2px solid rgb(51, 51, 51);
+    padding: 1em;
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+th {
+    border: 3px solid rgb(51, 51, 51);
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+td {
+    border: 3px solid rgb(51, 51, 51);
+    padding: 0.3em;
+}
+
+button {
+    height: 2em;
+    width: 5.2em;
+    position: relative;
+    color: white;
+    border-radius: 0.5em;
+    border-style: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(111, 111, 111);
+}
+
+.add {
+    height: 1.5em;
+    width: 5.4em;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    background-color: rgb(27, 143, 27);
+}
+
+.read {
+    background-color: rgb(50, 26, 117);
+}
+
+.update {
+    background-color: rgb(202, 200, 71);
+}
+
+.delete {
+    background-color: rgb(167, 49, 49);
+}
+
+.modal {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    height: 40vh;
+    min-width: 30vw;
+    border-radius: 2em;
+    font-size: 50%;
+    position: absolute;
+    top: 25%;
+    right: 150%;
+    padding: 2em;
+}
+
+.modal>p {
+    font-size: 0.5em;
+}
+
+.close-modal {
+    margin-top: 20px;
+    background-color: rgb(139, 126, 126);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal.open {
+    display: block;
+    right: 50%;
+    transition: right 0.5s;
+}
+
+.rate-buttons {
+    background-color: rgb(219, 201, 201);
+    width: 4em;
+}
+
+.rate-input {
+    width: 7em;
+    height: 1.5em;
+}
+
+.rate-value {
+    display: inline-block;
+}
+

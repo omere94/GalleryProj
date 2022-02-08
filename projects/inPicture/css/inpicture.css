@@ -1,0 +1,73 @@
+.quest-container img {
+  width: 300px;
+  border-radius: 10%;
+  margin-top: 2px;
+}
+
+html,
+body {
+  background-image: linear-gradient(
+    to top,
+    #ff5100,
+    #e9822e,
+    #d08140,
+    #b5874c,
+    #987755,
+    #8e775d,
+    #847665,
+    #7b756d,
+    #86827a,
+    #918f87,
+    #9d9c95,
+    #a9a9a3
+  );
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  display: none;
+  background-color: gray;
+}
+
+.buttons-container button {
+  margin: 10px;
+}
+.reset {
+  display: none;
+  background-color: rgba(59, 53, 53, 0.356);
+  text-align: center;
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(83, 79, 79);
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+button {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #60605e;
+}
