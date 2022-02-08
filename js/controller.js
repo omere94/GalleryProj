@@ -5,6 +5,7 @@ var gProjs;
 function init() {
   makeProjs();
   renderProjs();
+  //$('.contact-form button').on('click', onSubmit);
 }
 
 function makeProjs() {
@@ -81,7 +82,7 @@ function makeProjs() {
 function renderProjs() {
   var projs = gProjs;
   var strHtml = '';
-  projs.forEach(project => {
+  projs.map(project => {
     strHtml += `<div class="col-md-4 col-sm-6 portfolio-item">
     <a class="portfolio-link ${project.id}" onclick="onProjClicked('${project.id}')" data-toggle="modal" href="#portfolioModal">
           <div class="portfolio-hover">
@@ -107,14 +108,14 @@ function onProjClicked(id) {
   document.querySelector(' .modal-body p').innerText = project.desc;
   document.querySelector(' .discription').innerText = project.desc;
   document.querySelector(' .full-pic').src = project.picUrlFull;
-  document.querySelector(' .to-page').href = project.url;
+  //document.querySelector(' .to-page').href = project.url;
 }
 
 function onSubmit() {
-var $elSubjectVal = $('#form-subject').val();
-var $elTextVal = $('#form-text').val();
-var resSubject = $elSubjectVal.split(' ').join('20%');
-var resText = $elTextVal.split(' ').join('20%');
-window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=omere653@gmail.com&su=${resSubject}&body=${resText}`, '_blank')
+  var $elSubjectVal = $('.subject-value').val();
+  var $elBodyVal = $('.body-value').val();
+//var resSubject = $elSubjectVal.split(' ').join('20%');
+//var resText = $elTextVal.split(' ').join('20%');
+window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=omere653@gmail.com&su=${$elSubjectVal}&body=${$elBodyVal}`, '_blank')
 }
 
